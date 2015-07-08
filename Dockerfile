@@ -6,7 +6,7 @@
 FROM base/archlinux
 MAINTAINER Logan Koester <logan@logankoester.com>
 
-RUN curl -o /etc/pacman.d/mirrorlist "https://www.archlinux.org/mirrorlist/?country=all&protocol=https&ip_version=6&use_mirror_status=on" && \
+RUN curl -o /etc/pacman.d/mirrorlist "https://www.archlinux.org/mirrorlist/?country=DE&use_mirror_status=on" && \
   sed -i 's/^#//' /etc/pacman.d/mirrorlist
 
 ONBUILD RUN pacman-key --refresh-keys && \
@@ -17,4 +17,3 @@ ONBUILD RUN pacman-key --refresh-keys && \
   pacman -Syyu --noprogressbar --noconfirm && \
   pacman -Scc --noconfirm && \
   rm -rf /usr/share/man/*
-

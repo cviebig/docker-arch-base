@@ -8,7 +8,7 @@
 
 [![DockerCI](http://dockeri.co/image/logankoester/archlinux)](https://registry.hub.docker.com/u/logankoester/archlinux/)
 
-The pacman mirrorlist is populated by https://www.archlinux.org/mirrorlist/ (all/https/ipv6/by status).
+The pacman mirrorlist is populated by https://www.archlinux.org/mirrorlist/ (Germany/by status).
 
 ## Install
 
